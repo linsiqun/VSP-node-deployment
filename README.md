@@ -170,22 +170,28 @@ replacement code
 	<strong>The following command</strong> 
 </p>
 <p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">bash <(wget -qO- https://run.nodepass.eu/dash.sh)    #Deployment Commands-1</span></span></pre>
+<pre><span class="pl-c"><span class="pl-c">bash <(wget -qO- https://run.nodepass.eu/dash.sh) install   #Deployment Commands-1</span></span></pre>
 </p>
 <p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">bash <(curl -sSL https://run.nodepass.eu/dash.sh)    #Deployment Commands-2</span></span></pre>
+<pre><span class="pl-c"><span class="pl-c">bash <(curl -sSL https://run.nodepass.eu/dash.sh) install   #Deployment Commands-2</span></span></pre>
 </p>
 <p style="text-indent:2em;">
 	One-click installation script [ terminal installation selection]
 </p>
 <p style="text-indent:2em;">
-	<strong>The following command</strong> 
+	<strong>reset password</strong> 
 </p>
 <p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">bash (curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)    #3X-UI one-click installation panel</span></span></pre>
+<pre><span class="pl-c"><span class="pl-c">bash <(curl -sSL https://run.nodepass.eu/dash.sh) resetpwd    #reset password</span></span></pre>
 </p>
 <p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">bash (wget -qO- https://raw.githubusercontent.com/fscarmen/sing-box/main/sing-box.sh)    #Sing-Box One-click script</span></span></pre>
+	<strong>terminal installation selection</strong>
+</p>
+<p style="text-indent:2em;">
+<pre><span class="pl-c"><span class="pl-c">bash (curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)    #3X-UI installation panel</span></span></pre>
+</p>
+<p style="text-indent:2em;">
+<pre><span class="pl-c"><span class="pl-c">bash (wget -qO- https://raw.githubusercontent.com/fscarmen/sing-box/main/sing-box.sh)    #Sing-Box script</span></span></pre>
 </p>
 <p style="text-indent:2em;">
 	<br />
