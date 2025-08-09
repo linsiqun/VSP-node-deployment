@@ -78,10 +78,10 @@
 	<strong>The following command</strong> 
 </p>
 <p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">wget -N --no-check-certificate href="https://github.com/ginuerzh/gost/releases/download/v2.11.0/gost-linux-amd64-2.11.0.gz &amp;&amp; gzip -d gost-linux-amd64-2.11.0.gz     #Deploy one-click script midway</span></span></pre>
+<pre><span class="pl-c"><span class="pl-c">wget -N --no-check-certificate href="https://github.com/ginuerzh/gost/releases/download/v2.11.0/gost-linux-amd64-2.11.0.gz gzip -d gost-linux-amd64-2.11.0.gz     #Deploy one-click script midway</span></span></pre>
 </p>
 <p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh &amp;&amp; chmod +x gost.sh &amp;&amp; ./gost.sh     #Deploy the final script code</span></span></pre>
+<pre><span class="pl-c"><span class="pl-c">wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh && chmod +x gost.sh && ./gost.sh      #Deploy the final script code</span></span></pre>
 </p>
 <p style="text-indent:2em;">
 	<br />
@@ -140,7 +140,7 @@ replacement code
 	<strong>The following command</strong> 
 </p>
 <p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">bash &lt;(curl -fsSL https://raw.githubusercontent.com/slobys/SSL-Renewal/main/acme.sh)    #Deployment Commands</span></span></pre>
+<pre><span class="pl-c"><span class="pl-c">bash (curl -fsSL https://raw.githubusercontent.com/slobys/SSL-Renewal/main/acme.sh)    #Deployment Commands</span></span></pre>
 </p>
 <p>
 	<br />
@@ -157,9 +157,11 @@ replacement code
 <p style="text-indent:2em;">
 	<strong>The following command</strong> 
 </p>
-
 <p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">bash &lt;(wget -qO- https://run.nodepass.eu/np.sh)    #Deployment Commands</span></span></pre>
+<pre><span class="pl-c"><span class="pl-c">bash <(wget -qO- https://run.nodepass.eu/np.sh)    #Deployment Commands-1</span></span></pre>
+</p>
+<p style="text-indent:2em;">
+<pre><span class="pl-c"><span class="pl-c">bash <(curl -sSL https://run.nodepass.eu/np.sh)    #Deployment Commands-2</span></span></pre>
 </p>
 <p style="text-indent:2em;">
 	B. Deploy Nodepass Panel [Mid-range terminal installation]
@@ -168,7 +170,10 @@ replacement code
 	<strong>The following command</strong> 
 </p>
 <p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">bash &lt;(wget -qO- https://run.nodepass.eu/dash.sh)    #Deployment Commands</span></span></pre>
+<pre><span class="pl-c"><span class="pl-c">bash <(wget -qO- https://run.nodepass.eu/dash.sh)    #Deployment Commands-1</span></span></pre>
+</p>
+<p style="text-indent:2em;">
+<pre><span class="pl-c"><span class="pl-c">bash <(curl -sSL https://run.nodepass.eu/dash.sh)    #Deployment Commands-2</span></span></pre>
 </p>
 <p style="text-indent:2em;">
 	One-click installation script [ terminal installation selection]
@@ -177,10 +182,10 @@ replacement code
 	<strong>The following command</strong> 
 </p>
 <p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">bash &lt;(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)    #3X-UI one-click installation panel</span></span></pre>
+<pre><span class="pl-c"><span class="pl-c">bash (curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)    #3X-UI one-click installation panel</span></span></pre>
 </p>
 <p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">bash &lt;(wget -qO- https://raw.githubusercontent.com/fscarmen/sing-box/main/sing-box.sh)    #Sing-Box One-click script</span></span></pre>
+<pre><span class="pl-c"><span class="pl-c">bash (wget -qO- https://raw.githubusercontent.com/fscarmen/sing-box/main/sing-box.sh)    #Sing-Box One-click script</span></span></pre>
 </p>
 <p style="text-indent:2em;">
 	<br />
@@ -204,7 +209,7 @@ replacement code
 <pre><span class="pl-c"><span class="pl-c">ufw disable    #Turn off the firewall</span></span></pre>
 </p>
 <p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">bash &lt;(curl -fsSL https://raw.githubusercontent.com/Aurora-Admin-Panel/deploy/main/install.sh)    #One-click installation of Aurora panel midway</span></span></pre>
+<pre><span class="pl-c"><span class="pl-c">bash (curl -fsSL https://raw.githubusercontent.com/Aurora-Admin-Panel/deploy/main/install.sh)    #One-click installation of Aurora panel midway</span></span></pre>
 </p>
 <p>
 	<br />
@@ -226,13 +231,16 @@ replacement code
 <pre><span class="pl-c"><span class="pl-c">apt update -y     #Update the system</span></span></pre>
 </p>
 <p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">apt-get install ca-certificates wget -y &amp;&amp; update-ca-certificates   #Update the system's root certificate</span></span></pre>
+<pre><span class="pl-c"><span class="pl-c">apt-get install ca-certificates wget -y update-ca-certificates   #Update the system's root certificate</span></span></pre>
 </p>
 <p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">wget -O tcp.sh "https://github.com/ylx2016/Linux-NetSpeed/raw/master/tcp.sh" &amp;&amp; chmod +x tcp.sh &amp;&amp; ./tcp.sh    #Enable BBR acceleration</span></span></pre>
+<pre><span class="pl-c"><span class="pl-c">wget -O tcp.sh "https://github.com/ylx2016/Linux-NetSpeed/raw/master/tcp.sh" chmod +x tcp.sh ; ./tcp.sh    #Enable BBR acceleration</span></span></pre>
 </p>
 <p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">source &lt;(curl -L https://github.com/trojanpanel/install-script/raw/main/install\_script.sh)     #Trojan Panel Installation Panel</span></span></pre>
+<pre><span class="pl-c"><span class="pl-c">source <(curl -L https://github.com/trojanpanel/install-script/raw/main/install_script.sh)     #Trojan Panel Installation Panel</span></span></pre>
+</p>
+ <p style="text-indent:2em;">
+<pre><span class="pl-c"><span class="pl-c">source <(curl -L https://github.com/trojanpanel/install-script/raw/main/install_script_standalone.sh)     #Trojan Panel Installation Panel</span></span></pre>
 </p>
 <br />
 <p style="text-indent:2em;">
@@ -254,10 +262,10 @@ replacement code
 	<strong>The following command</strong> 
 </p>
 <p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">bash &lt;(curl -fsSL https://raw.githubusercontent.com/slobys/SSL-Renewal/main/acme.sh)      #Apply for an SSL certificate with one click</span></span></pre>
+<pre><span class="pl-c"><span class="pl-c">bash (curl -fsSL https://raw.githubusercontent.com/slobys/SSL-Renewal/main/acme.sh)      #Apply for an SSL certificate with one click</span></span></pre>
 </p>
 <p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">bash &lt;(curl -Ls https://raw.githubusercontent.com/alireza0/s-ui/master/install.sh)      #One-click installation of Sing-Box and Xray panels</span></span></pre>
+<pre><span class="pl-c"><span class="pl-c">bash (curl -Ls https://raw.githubusercontent.com/alireza0/s-ui/master/install.sh)      #One-click installation of Sing-Box and Xray panels</span></span></pre>
 </p>
 <p style="text-indent:2em;">
 	<br />
@@ -269,7 +277,7 @@ replacement code
 	<h1 class="heading-element">
 		<strong>sb one-click deployment builds sing-box script</strong> 
 	</h1>
-<a id="user-content-sb-one-click-deployment-builds-sing-box-script" class="anchor" href="https://github.com/linsiqun/VSP-node-deployment#sb-one-click-deployment-builds-sing-box-script"></a> 
+<a id="user-content-sb-one-click-deployment-builds-sing-box-script" class="anchor" href="https://github.com/linsiqun/VSP-node-deployment#sb-one-click-deployment-builds-sing-box-script"></a>
 </div>
 <p style="text-indent:2em;">
 	<strong>The following command</strong> 
@@ -278,7 +286,7 @@ replacement code
 <pre><span class="pl-c"><span class="pl-c">sudo ufw disable    #Turn off the firewall</span></span></pre>
 </p>
 <p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">bash &lt;(wget -qO- https://raw.githubusercontent.com/fscarmen/sing-box/main/sing-box.sh)   #sb one-key script</span></span></pre>
+<pre><span class="pl-c"><span class="pl-c">bash <(wget -qO- https://raw.githubusercontent.com/fscarmen/sing-box/main/sing-box.sh)     #sb one-key script</span></span></pre>
 </p>
 <div class="markdown-heading">
 	<h1 class="heading-element">
@@ -295,7 +303,7 @@ replacement code
 <pre><span class="pl-c"><span class="pl-c">ufw disable    #Turn off the firewall</span></span></pre>
 </p>
 <p style="text-indent:2em;">
-<pre><span class="pl-c"><span class="pl-c">bash &lt;(curl -Ls href="https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)      #Install x-ui panel</span></span></pre>
+<pre><span class="pl-c"><span class="pl-c">bash (curl -Ls href="https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)      #Install x-ui panel</span></span></pre>
 </p>
 <p style="text-indent:2em;">
 	<br />
